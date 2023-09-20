@@ -1,0 +1,265 @@
+.list-restaurant {
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    min-height: 100vh;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    background-color: #F1A661;
+    color: #333333;
+}
+
+.list-restaurant > h1 {
+    padding-bottom: 35px;
+}
+
+.wrapper-grid {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 35px;
+    column-gap: 50px;
+    column-count: 3;
+    margin: auto;
+    padding: 25px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    border: 5px solid #333333;
+    border-radius: 25px;
+    background-color: #FDEEDC;
+}
+
+.wrapper-grid > a {
+    width: 100%;
+    text-decoration: none;
+    color: #333333;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+.wrapper-grid > a:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.bagian-gambar {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.restaurant-name {
+    width: 100%;
+    height: auto;
+    background-color: #333333;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fdeedc;
+}
+
+.restaurant-rate {
+    width: 100%;
+    height: auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #F1A661;
+    color: #333333;
+}
+
+.restaurant-city {
+    width: 100%;
+    height: auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #FFD8A9;
+    color: #333333;
+}
+
+.bagian-deskripsi {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.bagian-deskripsi > p {
+    padding: 10px;
+}
+
+.detail-restaurant {
+    max-width: 100%;
+    width: auto;
+    min-width: auto;
+    height: auto;
+    display: block;
+    padding: 25px;
+    text-align: center;
+    background-color: #F1A661;
+    color: #333333;
+}
+
+.detail-restaurant > h1 {
+    padding-bottom: 5px;
+}
+
+#judulDetail {
+    font-weight: bolder;
+}
+
+.kontainer-detail {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flex;
+}
+
+.bagian-kiri-normal {
+    display: block;
+    width: 70%;
+    height: auto;
+    padding: 15px;
+    color: white;
+    background-color: #333333;
+    text-align: justify;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+hr {
+    border: white solid 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.bagian-kiri-mobile {
+    display: none;
+}
+
+.bagian-kanan {
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    background-color: #FDEEDC;
+    color: #333333;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.kotak-gambar {
+    width: 100%;
+    height: auto;
+}
+
+.kotak-gambar > img {
+    width: 100%;
+    height: auto;
+}
+
+#makanan > li {
+    padding: 5px;
+}
+
+#minuman > li {
+    padding: 5px;
+}
+
+#rating {
+    font-size: larger;
+}
+
+.reviewer-profile {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-description {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1151px){
+    .wrapper-grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+#hamburgerButton {
+    padding: 14px;
+}
+
+.kontainer-review {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.kontainer-review > h1 {
+    margin: 15px;
+}
+
+.review {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    background-color: #fdeedc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #fdeedc;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 785px){
+    .wrapper-grid {
+        grid-template-columns: auto;
+    }
+    .kontainer-detail {
+        display: block;
+    }
+    .bagian-kiri-normal {
+        display: none;
+    }
+    .bagian-kiri-mobile {
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 15px;
+        color: white;
+        background-color: #333333;
+        text-align: justify;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .bagian-kiri-mobile > hr {
+        border: white solid 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .bagian-kanan {
+        width: auto;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+    }
+}
